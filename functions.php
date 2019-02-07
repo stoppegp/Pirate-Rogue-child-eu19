@@ -64,10 +64,10 @@ function late_child_function() {
 	add_filter( 'body_class', 'pirate_rogue_child_eu19_body_class' );
 	
 	/* set new default colors */
-	    set_theme_mod( 'pirate_rogue_main_meta_bgcol', 'eublue' );
-	    set_theme_mod( 'pirate_rogue_main_meta_bgcol_hover', 'main' );
-	    set_theme_mod( 'pirate_rogue_main_meta_textcol', 'white' );
-	    set_theme_mod( 'pirate_rogue_main_meta_textcol_hover', 'white' );
+	    //set_theme_mod( 'pirate_rogue_main_meta_bgcol', 'eublue' );
+	    //set_theme_mod( 'pirate_rogue_main_meta_bgcol_hover', 'main' );
+	    //set_theme_mod( 'pirate_rogue_main_meta_textcol', 'white' );
+	    //set_theme_mod( 'pirate_rogue_main_meta_textcol_hover', 'white' );
 	    set_theme_mod( 'pirate_rogue_footer_background_color', 'black' );
 }
 add_action( 'after_setup_theme', 'late_child_function' );
