@@ -9,3 +9,9 @@
 
 // Fix blogroll display after full width section
 @import "blogroll-fix";
+
+#colophon {
+	background-image: url('./img/bottomright.png');
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}

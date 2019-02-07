@@ -426,5 +426,10 @@ a.standard-btn.secondcolor-btn {
     float: left;
   }
 }
+#colophon {
+  background-image: url("./img/bottomright.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
 
 /*# sourceMappingURL=style.css.map */
