@@ -245,4 +245,105 @@ body.actionbutton-eublue #commentform input#submit {
   color: #003399;
 }
 
+.socialmedia-maincolor .search-open:focus, .socialmedia-maincolor .search-open:hover {
+  background: #003399;
+  border-color: #003399;
+}
+
+.socialmedia-secondcolor .search-open {
+  color: #003399;
+}
+
+@media screen and (min-width: 66.25em) {
+  /* --- Search Desktop --- */
+  .searchbar-maincolor .desktop-search input.search-field {
+    border-bottom-color: #003399;
+  }
+  .searchbar-maincolor .desktop-search input[type=submit] {
+    background: #003399;
+    border-color: #003399;
+  }
+  .searchbar-maincolor .desktop-search input[type=submit]:focus, .searchbar-maincolor .desktop-search input[type=submit]:hover {
+    background: #003399;
+  }
+
+  .searchbar-secondcolor .desktop-search {
+    background: rgba(0, 51, 153, 0.95);
+  }
+  .searchbar-secondcolor .desktop-search input[type=submit]:focus, .searchbar-secondcolor .desktop-search input[type=submit]:hover {
+    border: 2px solid #003399;
+  }
+}
+.socialmedia-secondcolor #overlay-open,
+.socialmedia-secondcolor #overlay-open-sticky,
+.socialmedia-secondcolor #overlay-close {
+  color: #003399;
+}
+
+.color-second {
+  color: #003399;
+}
+
+/*
+Links and colors
+*/
+.entry-content a:hover, .comment-text a:hover {
+  color: #003399;
+}
+
+.entry-content ul li ul li:before {
+  color: #003399;
+}
+
+.single-post .entry-header .page-links .number {
+  color: #003399;
+}
+.single-post .entry-tags a {
+  color: #003399;
+}
+
+#comments .disclaimer a {
+  color: #003399;
+}
+
+.secondcolor-box {
+  border: 3px solid #003399;
+}
+.secondcolor-box a {
+  color: #003399;
+}
+.secondcolor-box.invertbox {
+  background: #0044cc;
+}
+
+a.standard-btn.maincolor-btn:focus, a.standard-btn.maincolor-btn:hover {
+  background: #003399;
+}
+a.standard-btn.secondcolor-btn {
+  background: #003399;
+}
+
+.entry-content .four-columns-three.secondcolor {
+  background: #003399;
+}
+.entry-content .four-columns-three.secondcolor.lighten {
+  background: #0044cc;
+}
+.entry-content .four-columns-three.maincolor a {
+  color: #003399;
+}
+
+#section-fullwidth.withbackground.secondcolor p, #section-fullwidth.withbackground.secondcolor h1, #section-fullwidth.withbackground.secondcolor h2, #section-fullwidth.withbackground.secondcolor h3, #section-fullwidth.withbackground.secondcolor h4, #section-fullwidth.withbackground.secondcolor h5, #section-fullwidth.withbackground.secondcolor h6, #section-fullwidth.withbackground.secondcolor blockquote, #section-fullwidth.withbackground.secondcolor em, #section-fullwidth.withbackground.secondcolor code {
+  background: #003399;
+}
+#section-fullwidth.secondcolor {
+  background: #003399;
+}
+#section-fullwidth.secondcolor.lighten {
+  background: #0044cc;
+}
+#section-fullwidth.maincolor a {
+  color: #003399;
+}
+
 /*# sourceMappingURL=style.css.map */
