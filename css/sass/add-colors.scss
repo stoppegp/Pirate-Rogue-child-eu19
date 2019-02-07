@@ -1,0 +1,394 @@
+$add-colors-customizer-colorset: (
+    ("eublue", #003399, "EU-Blau"),
+);
+
+/*-----------------------------------------------------------------------------------*/
+/* Generate additional colorset classes
+/*-----------------------------------------------------------------------------------*/
+// Head Background
+@each $key in $add-colors-customizer-colorset {
+      $name:      nth($key, 1); 
+      $color:      nth($key, 2); 
+    
+    body.head-bgcol-#{$name} {
+        .sticky-header,
+        #masthead {
+            background-color: $color;
+            border-bottom-color: rgba($color,0.7);
+        }
+        #site-branding {
+            background-color: $color;
+        }
+
+    }
+    
+    body.head-textcol-#{$name} {
+       .search-open, 
+        #overlay-open, 
+        #overlay-open-sticky {
+            color: $color;
+        }
+        #masthead {
+            #desktop-navigation ul.menu li a,
+            p.site-title,
+            p.site-title a,
+            h1.site-title,
+            h1.site-title a, 
+            p.site-description {
+                  color: $color;
+            }
+        }
+    }
+    
+    body.head-linkborder-#{$name} {
+       #desktop-navigation ul.menu li.current-menu-ancestor a, 
+       #desktop-navigation ul.menu li.focus a, 
+       #desktop-navigation ul.menu li:focus a,
+       #desktop-navigation ul.menu li:hover a {
+            border-bottom-color: $color;
+        } 
+            
+       #desktop-navigation .sub-menu li a:focus, 
+       #desktop-navigation .children li a:focus, 
+       #desktop-navigation .sub-menu li a:hover, 
+       #desktop-navigation .children li a:hover {
+           background-color: $color;
+       }    
+       button#overlay-open:hover,
+       button#search-open:hover {
+            color: $color;
+       }     
+    }
+    
+    body.main-bgcol-#{$name} {
+       
+        background-color: $color;
+        .site-content header, 
+        .entry-content header,
+        blockquote,
+        &.blog .hentry .entry-cats,
+        &.blog .hentry .entry-cats a,
+        &.blog .featured-slider .entry-meta a,
+        &.single-post .entry-header .entry-cats a,
+        main {
+            background-color: $color;
+        }
+
+        &.blog .featured-content .hentry .entry-cats {
+            background-color: transparent;
+        }
+    }
+    body.actionbutton-#{$name} {
+        .gallery .slick-prev:before, 
+        .gallery .slick-next:before,
+        .gallery .slick-dots li.slick-active button:before,
+        .gallery .slick-dots li.slick-active button:before,
+        .gallery .slick-dots li button:hover:before,
+        .gallery .slick-dots li button:focus:before,
+        
+        
+        .desktop-search input.search-field {
+            border-bottom-color: $color;
+        } 
+        .comments-show #comments-toggle,
+        #comments-toggle:focus, 
+        #comments-toggle:hover,
+        input[type="button"], input[type="submit"], input#submit,
+        #commentform input#submit {
+            border-color: $color;
+            background-color: $color;
+        }
+        
+        
+        
+    }
+}
+
+
+
+
+
+// Main Headlines
+@each $key in $add-colors-customizer-colorset {
+      $name:      nth($key, 1); 
+      $color:      nth($key, 2); 
+    
+    .main-headlinecol-#{$name} {
+        
+        .entry-header h2.entry-title,
+        .entry-header h2.entry-title a {
+             color: $color;
+        }
+        main {     
+            #secondary h2.widget-title, 
+            #sidebar-page h2.widget-title,
+            h1, h2, h3, h4, h5, h6 {
+                color: $color;
+            }
+        }
+    }
+}
+// Main Headline Border
+@each $key in $add-colors-customizer-colorset {
+      $name:      nth($key, 1); 
+      $color:      nth($key, 2); 
+    
+    .main-titleunderline-#{$name} {
+        main {
+            .single-post .entry-header h1.entry-title, 
+            .entry-header h1.entry-title, 
+            .attachment h1.entry-title, 
+            .page h1.entry-title, 
+            h1.entry-title, 
+            .archive-header h1.archive-title, 
+            .site-content h1, 
+            .entry-content h1{
+                border-color: $color;
+            }
+            
+        }
+    }
+}
+
+
+@each $key in $add-colors-customizer-colorset {
+      $name:      nth($key, 1); 
+      $color:      nth($key, 2); 
+    // Main Textcol
+    .main-textcol-#{$name} {
+       .single-post .entry-header p.intro, 
+       .entry-summary, 
+       .front-section-title,
+       .social-front-title,
+       .widget_mc4wp_form_widget p,
+       .jetpack_subscription_widget #subscribe-text p, 
+       .section-about-column-one p,
+        blockquote p,
+        main {
+ 
+            color: $color;
+        }
+    }
+    // Main Linkcol
+    .main-linkcol-#{$name} {
+        main {
+            a,
+            blockquote a,
+            .entry-content a, 
+            .comment-text a {
+                 color: $color;
+            }
+        }
+    }
+    // Main Link Hover col
+    .main-linkhovercol-#{$name} {
+        &.single-post .entry-header .entry-cats a:hover,
+        &.blog .featured-slider .entry-cats a:hover, 
+        &.blog .featured-slider .entry-meta a:hover,
+        &.blog .hentry .entry-cats a:hover {
+             color: $color;
+        }
+        main {
+            a:hover,
+            blockquote a:hover,
+            .entry-content a:hover, 
+            .comment-text a:hover {
+                 color: $color;
+            }
+        }
+    }
+}
+
+// Meta Links
+@each $key in $add-colors-customizer-colorset {
+      $name:      nth($key, 1); 
+      $color:      nth($key, 2); 
+   
+    .main-meta-textcol-hover-#{$name} {
+
+        &.single-post .entry-header .entry-cats a:hover,
+        &.blog .featured-slider .entry-cats a:hover, 
+        &.blog .featured-slider .entry-meta a:hover,
+        &.blog .hentry .entry-cats a:hover,
+        .pagination .nav-links span.page-numbers:hover, 
+        .pagination .nav-links a.page-numbers:hover,
+        .featured-slider button.slick-arrow:focus::after, 
+        .featured-slider button.slick-arrow:hover::after {
+             color: $color;
+        }
+    }
+    .main-meta-textcol-#{$name} {
+
+        .entry-meta, 
+        .entry-cats,
+        .slider-text .entry-meta a, 
+        .slider-text .entry-cats a,
+        .section-one-column-one .entry-cats a,
+        .section-three-column-one .entry-cats a,
+        #front-section-four .entry-cats a,
+        #front-section-four .entry-meta a,
+        .featured-slider .entry-cats a, 
+        &.single-post .entry-header .entry-cats a,
+        &.blog .featured-slider .entry-cats a, 
+        &.blog .featured-slider .entry-meta a,
+        &.blog .hentry .entry-cats a,
+        &.single-post .entry-cats a,
+        &.single-post .entry-tags a,
+        &.single-post .entry-header .page-links a,
+        .pagination .nav-links span.page-numbers, 
+        .pagination .nav-links a.page-numbers,
+        &.single-post .entry-header .page-links .number {
+             color: $color;
+        }
+    }
+
+    
+    .main-meta-bgcol-#{$name} {
+        .entry-cats a,
+        .featured-slider .entry-cats a, 
+        .featured-slider .entry-meta a, 
+        .section-one-column-one .entry-cats a, 
+        .section-three-column-one .entry-cats a, 
+        #front-section-four .entry-cats a, 
+        &.single-post .entry-cats a, 
+        &.single-post .entry-tags a,
+        &.blog .hentry .entry-cats a,
+        &.blog .featured-slider .entry-cats a,
+        &.blog .featured-slider .entry-meta a,    
+        &.blog #primary .hentry.has-post-thumbnail:nth-child(4n+1) .entry-cats a,
+        .pagination .nav-links span.page-numbers, 
+        .pagination .nav-links a.page-numbers {
+            background: $color; 
+        }
+        .gallery .slick-prev:before, 
+        .gallery .slick-next:before,
+        .gallery .slick-dots li.slick-active button:before {
+            color: $color;
+        }
+        
+    }
+    .main-meta-bgcol-hover-#{$name} {
+        .entry-cats a:hover,
+        .featured-slider .entry-cats a:hover, 
+        .featured-slider .entry-meta a:hover, 
+        .section-one-column-one .entry-cats a:hover, 
+        .section-three-column-one .entry-cats a:hover, 
+        #front-section-four .entry-cats a:hover, 
+        &.blog .hentry .entry-cats a:hover,
+        &.blog .featured-slider .entry-cats a:hover,
+        &.blog .featured-slider .entry-meta a:hover,      
+        &.single-post .entry-cats a:hover, 
+        &.single-post .entry-tags a:hover,
+        &.blog #primary .hentry.has-post-thumbnail:nth-child(4n+1) .entry-cats a:hover,
+        .pagination .nav-links span.page-numbers:hover, 
+        .pagination .nav-links a.page-numbers:hover {
+            background: $color; 
+        }
+    }
+}
+
+
+
+@each $key in $add-colors-customizer-colorset {
+      $name:      nth($key, 1); 
+      $color:      nth($key, 2); 
+    
+    // Main Listitem
+
+    .main-listitem-#{$name} {
+        main {            
+            ul li {
+		&:before {          
+                    color: $color;
+                }
+            }
+        }
+    }
+
+    // Main Quoteborder
+    .main-quoteborder-#{$name} {
+        blockquote {
+            border-color: $color;
+        }
+    }
+}
+// Tables
+@each $key in $add-colors-customizer-colorset {
+      $name:      nth($key, 1); 
+      $color:      nth($key, 2); 
+    
+    .main-table-textcol-#{$name} {
+        table, tr, th, td {
+            color: $color;
+        }
+    }
+    .main-table-bgcol-#{$name} {
+        table {
+            background-color: $color;
+        }
+    }
+    .main-table-bgcol-head-#{$name} {
+        table thead, th {
+            background-color: $color;
+        }
+    }
+    .main-table-bgcol-odd-#{$name} {
+        
+        tr td {
+           background-color: transparent;
+        }
+        table.long tr:nth-child(odd) td,
+        tr:nth-child(odd) td {
+		background-color: $color;
+        }
+    }
+}
+
+// Footer 
+@each $key in $add-colors-customizer-colorset {
+      $name:      nth($key, 1); 
+      $color:      nth($key, 2); 
+    
+      //  Background
+    .footer-bgcol-#{$name} {
+        #colophon {
+           background-color: $color;
+           border-color: $color;
+        }
+    }
+    //  Headlines
+    .footer-headlinecol-#{$name} {
+        #colophon {
+            p.title-footer,
+            .footer-menu h3.footer-menu-title,
+            #footer-social h2.socialmedia,
+            h1, h2, h3, h4, h5, h6 {
+                color: $color;
+            }
+        }
+    }
+    //  Textcol
+    .footer-textcol-#{$name} {
+        #colophon,
+        #colophon p, 
+        #colophon #site-info {
+            color: $color;
+        }
+    }
+    //  Linkcol
+    .footer-linkcol-#{$name} {
+        #colophon p a,
+        #colophon #site-info a,
+        #colophon .footer-menu ul a {
+            color: $color;
+        }
+    }
+    //  Link Hover col
+    .footer-linkhovercol-#{$name} {
+        #colophon p a:hover,
+        #colophon #site-info a:hover,
+        #colophon .footer-menu ul a:hover {
+            color: $color;
+        }
+    }
+}

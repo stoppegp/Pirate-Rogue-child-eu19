@@ -6,6 +6,21 @@ function parent_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'parent_enqueue_styles' );
 
+
+/* add additional colors for colorsets */
+function pirate_rogue_child_eu19_body_class_modify_customizer_settings( $wp_customize ) {
+	global $xwolf_customizer_setoptions;
+
+	$additional_colorlist = array('eublue' => '#003399');
+	
+	foreach ($xwolf_customizer_setoptions['pirate_rogue_themeoptions']['fields'] as $key => $val) {
+		if ('colorlist-radio' == $val['type']) {
+			$xwolf_customizer_setoptions['pirate_rogue_themeoptions']['fields'][$key]['liste'] += $additional_colorlist;
+		}
+	}
+}
+add_action( 'customize_register', 'pirate_rogue_child_eu19_body_class_modify_customizer_settings', 1 );
+
 /* function to run after parents function.php */
 function late_child_function() {
 	

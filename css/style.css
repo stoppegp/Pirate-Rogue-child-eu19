@@ -14,3 +14,235 @@
 This theme, like WordPress, is licensed under the GPL.
 Lets make the world a better place.
 */
+/*-----------------------------------------------------------------------------------*/
+/* Generate additional colorset classes
+/*-----------------------------------------------------------------------------------*/
+body.head-bgcol-eublue .sticky-header,
+body.head-bgcol-eublue #masthead {
+  background-color: #003399;
+  border-bottom-color: rgba(0, 51, 153, 0.7);
+}
+body.head-bgcol-eublue #site-branding {
+  background-color: #003399;
+}
+
+body.head-textcol-eublue .search-open,
+body.head-textcol-eublue #overlay-open,
+body.head-textcol-eublue #overlay-open-sticky {
+  color: #003399;
+}
+body.head-textcol-eublue #masthead #desktop-navigation ul.menu li a,
+body.head-textcol-eublue #masthead p.site-title,
+body.head-textcol-eublue #masthead p.site-title a,
+body.head-textcol-eublue #masthead h1.site-title,
+body.head-textcol-eublue #masthead h1.site-title a,
+body.head-textcol-eublue #masthead p.site-description {
+  color: #003399;
+}
+
+body.head-linkborder-eublue #desktop-navigation ul.menu li.current-menu-ancestor a,
+body.head-linkborder-eublue #desktop-navigation ul.menu li.focus a,
+body.head-linkborder-eublue #desktop-navigation ul.menu li:focus a,
+body.head-linkborder-eublue #desktop-navigation ul.menu li:hover a {
+  border-bottom-color: #003399;
+}
+body.head-linkborder-eublue #desktop-navigation .sub-menu li a:focus,
+body.head-linkborder-eublue #desktop-navigation .children li a:focus,
+body.head-linkborder-eublue #desktop-navigation .sub-menu li a:hover,
+body.head-linkborder-eublue #desktop-navigation .children li a:hover {
+  background-color: #003399;
+}
+body.head-linkborder-eublue button#overlay-open:hover,
+body.head-linkborder-eublue button#search-open:hover {
+  color: #003399;
+}
+
+body.main-bgcol-eublue {
+  background-color: #003399;
+}
+body.main-bgcol-eublue .site-content header,
+body.main-bgcol-eublue .entry-content header,
+body.main-bgcol-eublue blockquote, body.main-bgcol-eublue.blog .hentry .entry-cats, body.main-bgcol-eublue.blog .hentry .entry-cats a, body.main-bgcol-eublue.blog .featured-slider .entry-meta a, body.main-bgcol-eublue.single-post .entry-header .entry-cats a,
+body.main-bgcol-eublue main {
+  background-color: #003399;
+}
+body.main-bgcol-eublue.blog .featured-content .hentry .entry-cats {
+  background-color: transparent;
+}
+
+body.actionbutton-eublue .gallery .slick-prev:before,
+body.actionbutton-eublue .gallery .slick-next:before,
+body.actionbutton-eublue .gallery .slick-dots li.slick-active button:before,
+body.actionbutton-eublue .gallery .slick-dots li.slick-active button:before,
+body.actionbutton-eublue .gallery .slick-dots li button:hover:before,
+body.actionbutton-eublue .gallery .slick-dots li button:focus:before,
+body.actionbutton-eublue .desktop-search input.search-field {
+  border-bottom-color: #003399;
+}
+body.actionbutton-eublue .comments-show #comments-toggle,
+body.actionbutton-eublue #comments-toggle:focus,
+body.actionbutton-eublue #comments-toggle:hover,
+body.actionbutton-eublue input[type=button], body.actionbutton-eublue input[type=submit], body.actionbutton-eublue input#submit,
+body.actionbutton-eublue #commentform input#submit {
+  border-color: #003399;
+  background-color: #003399;
+}
+
+.main-headlinecol-eublue .entry-header h2.entry-title,
+.main-headlinecol-eublue .entry-header h2.entry-title a {
+  color: #003399;
+}
+.main-headlinecol-eublue main #secondary h2.widget-title,
+.main-headlinecol-eublue main #sidebar-page h2.widget-title,
+.main-headlinecol-eublue main h1, .main-headlinecol-eublue main h2, .main-headlinecol-eublue main h3, .main-headlinecol-eublue main h4, .main-headlinecol-eublue main h5, .main-headlinecol-eublue main h6 {
+  color: #003399;
+}
+
+.main-titleunderline-eublue main .single-post .entry-header h1.entry-title,
+.main-titleunderline-eublue main .entry-header h1.entry-title,
+.main-titleunderline-eublue main .attachment h1.entry-title,
+.main-titleunderline-eublue main .page h1.entry-title,
+.main-titleunderline-eublue main h1.entry-title,
+.main-titleunderline-eublue main .archive-header h1.archive-title,
+.main-titleunderline-eublue main .site-content h1,
+.main-titleunderline-eublue main .entry-content h1 {
+  border-color: #003399;
+}
+
+.main-textcol-eublue .single-post .entry-header p.intro,
+.main-textcol-eublue .entry-summary,
+.main-textcol-eublue .front-section-title,
+.main-textcol-eublue .social-front-title,
+.main-textcol-eublue .widget_mc4wp_form_widget p,
+.main-textcol-eublue .jetpack_subscription_widget #subscribe-text p,
+.main-textcol-eublue .section-about-column-one p,
+.main-textcol-eublue blockquote p,
+.main-textcol-eublue main {
+  color: #003399;
+}
+
+.main-linkcol-eublue main a,
+.main-linkcol-eublue main blockquote a,
+.main-linkcol-eublue main .entry-content a,
+.main-linkcol-eublue main .comment-text a {
+  color: #003399;
+}
+
+.main-linkhovercol-eublue.single-post .entry-header .entry-cats a:hover, .main-linkhovercol-eublue.blog .featured-slider .entry-cats a:hover, .main-linkhovercol-eublue.blog .featured-slider .entry-meta a:hover, .main-linkhovercol-eublue.blog .hentry .entry-cats a:hover {
+  color: #003399;
+}
+.main-linkhovercol-eublue main a:hover,
+.main-linkhovercol-eublue main blockquote a:hover,
+.main-linkhovercol-eublue main .entry-content a:hover,
+.main-linkhovercol-eublue main .comment-text a:hover {
+  color: #003399;
+}
+
+.main-meta-textcol-hover-eublue.single-post .entry-header .entry-cats a:hover, .main-meta-textcol-hover-eublue.blog .featured-slider .entry-cats a:hover, .main-meta-textcol-hover-eublue.blog .featured-slider .entry-meta a:hover, .main-meta-textcol-hover-eublue.blog .hentry .entry-cats a:hover,
+.main-meta-textcol-hover-eublue .pagination .nav-links span.page-numbers:hover,
+.main-meta-textcol-hover-eublue .pagination .nav-links a.page-numbers:hover,
+.main-meta-textcol-hover-eublue .featured-slider button.slick-arrow:focus::after,
+.main-meta-textcol-hover-eublue .featured-slider button.slick-arrow:hover::after {
+  color: #003399;
+}
+
+.main-meta-textcol-eublue .entry-meta,
+.main-meta-textcol-eublue .entry-cats,
+.main-meta-textcol-eublue .slider-text .entry-meta a,
+.main-meta-textcol-eublue .slider-text .entry-cats a,
+.main-meta-textcol-eublue .section-one-column-one .entry-cats a,
+.main-meta-textcol-eublue .section-three-column-one .entry-cats a,
+.main-meta-textcol-eublue #front-section-four .entry-cats a,
+.main-meta-textcol-eublue #front-section-four .entry-meta a,
+.main-meta-textcol-eublue .featured-slider .entry-cats a, .main-meta-textcol-eublue.single-post .entry-header .entry-cats a, .main-meta-textcol-eublue.blog .featured-slider .entry-cats a, .main-meta-textcol-eublue.blog .featured-slider .entry-meta a, .main-meta-textcol-eublue.blog .hentry .entry-cats a, .main-meta-textcol-eublue.single-post .entry-cats a, .main-meta-textcol-eublue.single-post .entry-tags a, .main-meta-textcol-eublue.single-post .entry-header .page-links a,
+.main-meta-textcol-eublue .pagination .nav-links span.page-numbers,
+.main-meta-textcol-eublue .pagination .nav-links a.page-numbers, .main-meta-textcol-eublue.single-post .entry-header .page-links .number {
+  color: #003399;
+}
+
+.main-meta-bgcol-eublue .entry-cats a,
+.main-meta-bgcol-eublue .featured-slider .entry-cats a,
+.main-meta-bgcol-eublue .featured-slider .entry-meta a,
+.main-meta-bgcol-eublue .section-one-column-one .entry-cats a,
+.main-meta-bgcol-eublue .section-three-column-one .entry-cats a,
+.main-meta-bgcol-eublue #front-section-four .entry-cats a, .main-meta-bgcol-eublue.single-post .entry-cats a, .main-meta-bgcol-eublue.single-post .entry-tags a, .main-meta-bgcol-eublue.blog .hentry .entry-cats a, .main-meta-bgcol-eublue.blog .featured-slider .entry-cats a, .main-meta-bgcol-eublue.blog .featured-slider .entry-meta a, .main-meta-bgcol-eublue.blog #primary .hentry.has-post-thumbnail:nth-child(4n+1) .entry-cats a,
+.main-meta-bgcol-eublue .pagination .nav-links span.page-numbers,
+.main-meta-bgcol-eublue .pagination .nav-links a.page-numbers {
+  background: #003399;
+}
+.main-meta-bgcol-eublue .gallery .slick-prev:before,
+.main-meta-bgcol-eublue .gallery .slick-next:before,
+.main-meta-bgcol-eublue .gallery .slick-dots li.slick-active button:before {
+  color: #003399;
+}
+
+.main-meta-bgcol-hover-eublue .entry-cats a:hover,
+.main-meta-bgcol-hover-eublue .featured-slider .entry-cats a:hover,
+.main-meta-bgcol-hover-eublue .featured-slider .entry-meta a:hover,
+.main-meta-bgcol-hover-eublue .section-one-column-one .entry-cats a:hover,
+.main-meta-bgcol-hover-eublue .section-three-column-one .entry-cats a:hover,
+.main-meta-bgcol-hover-eublue #front-section-four .entry-cats a:hover, .main-meta-bgcol-hover-eublue.blog .hentry .entry-cats a:hover, .main-meta-bgcol-hover-eublue.blog .featured-slider .entry-cats a:hover, .main-meta-bgcol-hover-eublue.blog .featured-slider .entry-meta a:hover, .main-meta-bgcol-hover-eublue.single-post .entry-cats a:hover, .main-meta-bgcol-hover-eublue.single-post .entry-tags a:hover, .main-meta-bgcol-hover-eublue.blog #primary .hentry.has-post-thumbnail:nth-child(4n+1) .entry-cats a:hover,
+.main-meta-bgcol-hover-eublue .pagination .nav-links span.page-numbers:hover,
+.main-meta-bgcol-hover-eublue .pagination .nav-links a.page-numbers:hover {
+  background: #003399;
+}
+
+.main-listitem-eublue main ul li:before {
+  color: #003399;
+}
+
+.main-quoteborder-eublue blockquote {
+  border-color: #003399;
+}
+
+.main-table-textcol-eublue table, .main-table-textcol-eublue tr, .main-table-textcol-eublue th, .main-table-textcol-eublue td {
+  color: #003399;
+}
+
+.main-table-bgcol-eublue table {
+  background-color: #003399;
+}
+
+.main-table-bgcol-head-eublue table thead, .main-table-bgcol-head-eublue th {
+  background-color: #003399;
+}
+
+.main-table-bgcol-odd-eublue tr td {
+  background-color: transparent;
+}
+.main-table-bgcol-odd-eublue table.long tr:nth-child(odd) td,
+.main-table-bgcol-odd-eublue tr:nth-child(odd) td {
+  background-color: #003399;
+}
+
+.footer-bgcol-eublue #colophon {
+  background-color: #003399;
+  border-color: #003399;
+}
+
+.footer-headlinecol-eublue #colophon p.title-footer,
+.footer-headlinecol-eublue #colophon .footer-menu h3.footer-menu-title,
+.footer-headlinecol-eublue #colophon #footer-social h2.socialmedia,
+.footer-headlinecol-eublue #colophon h1, .footer-headlinecol-eublue #colophon h2, .footer-headlinecol-eublue #colophon h3, .footer-headlinecol-eublue #colophon h4, .footer-headlinecol-eublue #colophon h5, .footer-headlinecol-eublue #colophon h6 {
+  color: #003399;
+}
+
+.footer-textcol-eublue #colophon,
+.footer-textcol-eublue #colophon p,
+.footer-textcol-eublue #colophon #site-info {
+  color: #003399;
+}
+
+.footer-linkcol-eublue #colophon p a,
+.footer-linkcol-eublue #colophon #site-info a,
+.footer-linkcol-eublue #colophon .footer-menu ul a {
+  color: #003399;
+}
+
+.footer-linkhovercol-eublue #colophon p a:hover,
+.footer-linkhovercol-eublue #colophon #site-info a:hover,
+.footer-linkhovercol-eublue #colophon .footer-menu ul a:hover {
+  color: #003399;
+}
+
+/*# sourceMappingURL=style.css.map */
