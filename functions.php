@@ -5,4 +5,10 @@ function parent_enqueue_styles() {
  
 }
 add_action( 'wp_enqueue_scripts', 'parent_enqueue_styles' );
+
+/* function to run after parents function.php */
+function late_child_function() {
+	// do stuff
+}
+add_action( 'after_setup_theme', 'late_child_function' );
 ?>
