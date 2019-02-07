@@ -193,3 +193,37 @@ a.standard-btn {
 .blog #primary .hentry.has-post-thumbnail:nth-child(4n+1) .entry-cats a {
     background: $color-second-new; 
 }
+
+.socialmedia-maincolor .social-nav ul li {
+    a {
+        &:focus,
+        &:hover {
+            background:  $color-second-new;
+            border-color: $color-second-new;
+        }
+    }
+    :focus,
+    :hover {
+        background:  $color-second-new;
+        border-color: $color-second-new;
+
+    }
+}
+
+.socialmedia-secondcolor .social-nav ul li {
+     a {
+        color: $color-second-new;
+     }
+}
+#footer-social.social-nav {
+	.socialmedia-maincolor  & ul li a {
+	    &:focus,
+	    &:hover {
+		background:  $color-second-new;
+		border-color: $color-second-new;
+
+	   }
+	}
+        
+}
+

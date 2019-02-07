@@ -367,4 +367,64 @@ a.standard-btn.secondcolor-btn {
   background: #003399;
 }
 
+.socialmedia-maincolor .social-nav ul li a:focus, .socialmedia-maincolor .social-nav ul li a:hover {
+  background: #003399;
+  border-color: #003399;
+}
+.socialmedia-maincolor .social-nav ul li :focus,
+.socialmedia-maincolor .social-nav ul li :hover {
+  background: #003399;
+  border-color: #003399;
+}
+
+.socialmedia-secondcolor .social-nav ul li a {
+  color: #003399;
+}
+
+.socialmedia-maincolor #footer-social.social-nav ul li a:focus, .socialmedia-maincolor #footer-social.social-nav ul li a:hover {
+  background: #003399;
+  border-color: #003399;
+}
+
+.page .blogroll .hentry .entry-thumbnail,
+.blog .hentry .entry-thumbnail,
+.archive .hentry .entry-thumbnail,
+.search-results .hentry .entry-thumbnail {
+  width: 32.1875%;
+  /* -- 103px at 320px ---*/
+  margin: 0 0 0 10px;
+  float: right;
+}
+
+@media screen and (min-width: 48em) {
+  .page .blogroll .hentry {
+    padding: 20px 0 40px;
+  }
+
+  /* --- Blog - default --- */
+  .page .blogroll .hentry .entry-meta {
+    width: 25.4901960784%;
+    /* -- 130px at 1440px ---*/
+    float: left;
+    display: block;
+  }
+
+  .page .blogroll .hentry .entry-main {
+    width: 74.5098039216%;
+    /* -- 380px at 1440px ---*/
+    float: left;
+  }
+
+  .page .blogroll .hentry .entry-thumbnail {
+    width: 36.1445783133%;
+    /* -- 300px at 1440px ---*/
+  }
+
+  .page .blogroll .hentry .meta-main-wrap {
+    width: 61.4457831325%;
+    /* -- 510px at 1440px ---*/
+    float: left;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

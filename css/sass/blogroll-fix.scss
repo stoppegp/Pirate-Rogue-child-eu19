@@ -1,0 +1,40 @@
+$breakpoint-sm:	    48em;
+
+.page .blogroll .hentry .entry-thumbnail, 
+.blog .hentry .entry-thumbnail, 
+.archive .hentry .entry-thumbnail, 
+.search-results .hentry .entry-thumbnail {
+  width: 32.1875%;
+  /* -- 103px at 320px ---*/
+  margin: 0 0 0 10px;
+  float: right;
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+ 
+    .page .blogroll .hentry {
+      padding: 20px 0 40px;
+    }
+    /* --- Blog - default --- */
+    .page .blogroll .hentry .entry-meta {
+      width: 25.49019607843137%;
+      /* -- 130px at 1440px ---*/
+      float: left;
+      display: block;
+    }
+    .page .blogroll .hentry .entry-main {
+      width: 74.50980392156863%;
+      /* -- 380px at 1440px ---*/
+      float: left;
+    }
+
+    .page .blogroll .hentry .entry-thumbnail {
+      width: 36.14457831325301%;
+      /* -- 300px at 1440px ---*/
+    }
+    .page .blogroll .hentry .meta-main-wrap {
+      width: 61.44578313253012%;
+      /* -- 510px at 1440px ---*/
+      float: left;
+    }
+}
