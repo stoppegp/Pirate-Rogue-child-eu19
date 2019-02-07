@@ -35,6 +35,18 @@ function late_child_function() {
 		add_shortcode('slider', 'pirate_rogue_shortcode_slider');
 		add_shortcode('slider-entry', 'pirate_rogue_shortcode_slider_entry');
 	}
+
+	/* Extends the parents body classes */
+	function pirate_rogue_child_eu19_body_class( $classes ) {
+
+		/* add slider-class when slider-shortcode is used */
+		global $post;
+		if( isset($post->post_content) && has_shortcode( $post->post_content, 'slider' ) ) {
+			$classes[] = 'slider-on';
+		}
+		return $classes;
+	}
+	add_filter( 'body_class', 'pirate_rogue_child_eu19_body_class' );
 }
 add_action( 'after_setup_theme', 'late_child_function' );
 ?>
