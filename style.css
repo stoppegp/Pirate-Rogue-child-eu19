@@ -429,6 +429,7 @@ a.standard-btn.secondcolor-btn {
 #colophon {
   background-image: url("./img/bottomright.png");
   background-position: bottom right;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
