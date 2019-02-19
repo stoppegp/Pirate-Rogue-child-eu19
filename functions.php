@@ -2,6 +2,9 @@
 /* enqueue styles og parent theme */
 function parent_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+    
+	// Dequeue Style from pirate-crew, this theme has its own style for it
+    wp_dequeue_style('pirate-crew');
  
 }
 add_action( 'wp_enqueue_scripts', 'parent_enqueue_styles' );
@@ -69,6 +72,9 @@ function late_child_function() {
 	    //set_theme_mod( 'pirate_rogue_main_meta_textcol', 'white' );
 	    //set_theme_mod( 'pirate_rogue_main_meta_textcol_hover', 'white' );
 	    set_theme_mod( 'pirate_rogue_footer_background_color', 'black' );
+		
+	
+
 }
 add_action( 'after_setup_theme', 'late_child_function' );
 ?>
