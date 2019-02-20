@@ -226,4 +226,32 @@ a.standard-btn {
 	}
         
 }
+/*-----------------------------------------------------------------------------------*/
+/* Accordion
+/*-----------------------------------------------------------------------------------*/
+.accordion {
+	.secondcolor .accordion-heading .accordion-toggle,
+	.second .accordion-heading .accordion-toggle {
+		border-color: $color-second-new;
+              
+                    &:hover, &:focus {
+                                background-color: lighten($color-second-new, 10%);
+                        }
+                        &.active, 
+                        &.active:hover, 
+                        &.active:focus {
+                                background-color: lighten($color-second-new, 10%);
+                        }
+	}
+}
 
+/* Boxes like accordions for single glossar entries and other article-inserts/shortcodes */
+.accordionbox {
+    
+    header {
+	&.secondcolor, 
+        &.second {
+		border-color: $color-second-new;
+	}
+    }
+}

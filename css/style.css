@@ -386,6 +386,30 @@ a.standard-btn.secondcolor-btn {
   border-color: #003399;
 }
 
+/*-----------------------------------------------------------------------------------*/
+/* Accordion
+/*-----------------------------------------------------------------------------------*/
+.accordion .secondcolor .accordion-heading .accordion-toggle,
+.accordion .second .accordion-heading .accordion-toggle {
+  border-color: #003399;
+}
+.accordion .secondcolor .accordion-heading .accordion-toggle:hover, .accordion .secondcolor .accordion-heading .accordion-toggle:focus,
+.accordion .second .accordion-heading .accordion-toggle:hover,
+.accordion .second .accordion-heading .accordion-toggle:focus {
+  background-color: #0044cc;
+}
+.accordion .secondcolor .accordion-heading .accordion-toggle.active, .accordion .secondcolor .accordion-heading .accordion-toggle.active:hover, .accordion .secondcolor .accordion-heading .accordion-toggle.active:focus,
+.accordion .second .accordion-heading .accordion-toggle.active,
+.accordion .second .accordion-heading .accordion-toggle.active:hover,
+.accordion .second .accordion-heading .accordion-toggle.active:focus {
+  background-color: #0044cc;
+}
+
+/* Boxes like accordions for single glossar entries and other article-inserts/shortcodes */
+.accordionbox header.secondcolor, .accordionbox header.second {
+  border-color: #003399;
+}
+
 .page .blogroll .hentry .entry-thumbnail,
 .blog .hentry .entry-thumbnail,
 .archive .hentry .entry-thumbnail,
