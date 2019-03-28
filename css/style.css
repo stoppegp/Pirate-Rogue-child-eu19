@@ -456,4 +456,62 @@ a.standard-btn.secondcolor-btn {
   background-repeat: no-repeat;
 }
 
+#desktop-navigation ul.menu li.maincolor {
+  padding: 0;
+}
+#desktop-navigation ul.menu li.maincolor > a {
+  color: white;
+  padding: 20px 15px 18px;
+  display: inline-block;
+  background-color: #ff8800;
+  border-bottom: none !important;
+}
+#desktop-navigation ul.menu li.maincolor > a:focus, #desktop-navigation ul.menu li.maincolor > a.focus, #desktop-navigation ul.menu li.maincolor > a:hover {
+  background-color: #003399;
+  border-bottom: none !important;
+}
+#desktop-navigation ul.menu li.maincolor > ul.sub-menu {
+  margin-top: 0;
+}
+#desktop-navigation ul.menu li.secondcolor {
+  padding: 0;
+}
+#desktop-navigation ul.menu li.secondcolor > a {
+  color: white;
+  padding: 20px 15px 18px;
+  display: inline-block;
+  background-color: #003399;
+  border-bottom: none !important;
+}
+#desktop-navigation ul.menu li.secondcolor > a:focus, #desktop-navigation ul.menu li.secondcolor > a.focus, #desktop-navigation ul.menu li.secondcolor > a:hover {
+  background-color: #ff8800;
+  border-bottom: none !important;
+}
+#desktop-navigation ul.menu li.secondcolor > ul.sub-menu {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #overlay-nav ul.menu li.maincolor > a {
+    color: white;
+    background-color: #ff8800;
+  }
+  #overlay-nav ul.menu li.maincolor > a:focus, #overlay-nav ul.menu li.maincolor > a.focus, #overlay-nav ul.menu li.maincolor > a:hover {
+    background-color: #003399;
+  }
+  #overlay-nav ul.menu li.maincolor button.dropdown-toggle {
+    color: white;
+  }
+  #overlay-nav ul.menu li.secondcolor > a {
+    color: white;
+    background-color: #003399;
+  }
+  #overlay-nav ul.menu li.secondcolor > a:focus, #overlay-nav ul.menu li.secondcolor > a.focus, #overlay-nav ul.menu li.secondcolor > a:hover {
+    background-color: #ff8800;
+  }
+  #overlay-nav ul.menu li.secondcolor button.dropdown-toggle {
+    color: white;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

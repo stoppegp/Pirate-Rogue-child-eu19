@@ -10,8 +10,86 @@
 // Fix blogroll display after full width section
 @import "blogroll-fix";
 
+
 #colophon {
 	background-image: url('./img/bottomright.png');
 	background-position: bottom right;
 	background-repeat: no-repeat;
+}
+
+#desktop-navigation {
+	ul.menu {
+		li.maincolor {
+			padding: 0;
+			> a {
+				color: white;
+				padding: 20px 15px 18px;
+				display: inline-block;
+				background-color: #ff8800;
+				border-bottom: none !important;
+				&:focus,
+				&.focus,
+				&:hover {
+					background-color: #003399;
+					border-bottom: none !important;
+				}
+			}
+			> ul.sub-menu {
+				margin-top: 0;
+			}
+		}
+		li.secondcolor {
+			padding: 0;
+			> a {
+				color: white;
+				padding: 20px 15px 18px;
+				display: inline-block;
+				background-color: #003399;
+				border-bottom: none !important;
+				&:focus,
+				&.focus,
+				&:hover {
+					background-color: #ff8800;
+					border-bottom: none !important;
+				}
+			}
+			> ul.sub-menu {
+				margin-top: 0;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1024px) {
+	#overlay-nav {
+		ul.menu {
+			li.maincolor {
+				> a {
+					color: white;
+					background-color: #ff8800;
+					&:focus,
+					&.focus,
+					&:hover {
+						background-color: #003399;
+					}
+				}
+				button.dropdown-toggle {
+					color: white;
+				}
+			}
+			li.secondcolor {
+				> a {
+					color: white;
+					background-color: #003399;
+					&:focus,
+					&.focus,
+					&:hover {
+						background-color: #ff8800;
+					}
+				}
+				button.dropdown-toggle {
+					color: white;
+				}
+			}
+		}
+	}
 }
