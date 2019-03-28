@@ -17,3 +17,6 @@ Um auf jeder beliebigen Seite einen Slider zu verwenden, wurden neue Shortcodes 
     [slider entry url="" img="" alt=""]
     [slider entry url="" img="" alt=""]
 [/slider]
+
+## Menü-Farben
+Um Einträge im Hauptmenü einzufärben, können die Klassen "maincolor" und "secondcolor" verwendet werden.
